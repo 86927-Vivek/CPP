@@ -17,7 +17,9 @@ using namespace std;
 
 class Time {
 private:
-    int hour, minute, second;
+    int hour;
+    int minute; 
+    int second;
 
 public:
     
