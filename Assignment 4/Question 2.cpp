@@ -17,12 +17,18 @@ public:
         ptr = new int[size]; 
     }
 
+    ~Stack()
+    {
+        delete[] ptr;
+        ptr = NULL;
+    }
+
     
     void push(int element)
     {
         if (isFull())
         {
-            cout << "Stack is full. will not push ";
+            cout << "Stack is full. will not push: "<<element<<endl;
             return;
         }
         ptr[++top] = element;
