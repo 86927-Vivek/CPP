@@ -88,7 +88,10 @@ public:
 
 int main(){
     Person p;
+    Person p1("Vishal","Ramnagar",1,2,2001);
     p.acceptPerson();
+    // p1.acceptPerson();
     p.displayPerson();
+    p1.displayPerson();
     return 0;
 }
